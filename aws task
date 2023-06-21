@@ -1,0 +1,14 @@
+how to create ebs volume and laucnch the instance and attach the ebs volume 
+
+aws ec2 create-volume --availability-zone <availability-zone> --size <size-in-gb> --volume-type <volume-type>
+
+aws ec2 run-instances --image-id <image-id> --instance-type <instance-type> --key-name <key-pair-name> --security-group-ids <security-group-ids> --subnet-id <subnet-id>
+
+
+
+chat by ping command 
+lauch two instance in aws connect 
+ping one system to another 
+tcdump 
+this command will store upcoming and outgoing request
+tcpdump -i enf0 -w est
