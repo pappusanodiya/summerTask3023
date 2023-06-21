@@ -1,0 +1,12 @@
+Step 1: Run the below command to run the container with the dind tag image.
+
+docker run --privileged -d --name <demo> docker:dind
+Step 2: Now login to the container.
+
+docker exec -it <demo> /bin/sh
+Step3: Once you run the above command and exec into the container then run the below command.
+
+docker pull ubuntu
+Step4: list all images using the below command.
+
+docker images
